@@ -1,5 +1,5 @@
 {
-  "name": "@johndockery/linear-cli",
+  "name": "@summer-health/linear-cli",
   "version": "1.0.0",
   "description": "CLI tool for interacting with Linear",
   "main": "dist/index.js",
@@ -25,13 +25,13 @@
     "issue-tracking"
   ],
   "author": "John Dockery",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/johndockery/linear-cli.git"
+    "url": "https://github.com/summer-health/linear-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/johndockery/linear-cli/issues"
+    "url": "https://github.com/summer-health/linear-cli/issues"
   },
   "engines": {
     "node": ">=18"
