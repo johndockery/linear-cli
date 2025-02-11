@@ -5,7 +5,7 @@ A command-line interface for interacting with Linear.
 ## Installation
 
 ```bash
-npm install -g @johndockery/linear-cli
+npm install -g @summer-health/linear-cli
 ```
 
 ## Configuration
