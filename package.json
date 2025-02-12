@@ -1,5 +1,5 @@
 {
-  "name": "@linear-cli/cli",
+  "name": "@johndockery/linear-cli",
   "version": "1.0.0",
   "description": "CLI tool for interacting with Linear",
   "main": "dist/index.js",
