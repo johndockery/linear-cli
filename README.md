@@ -5,43 +5,18 @@ A command-line interface for interacting with Linear.
 ## Installation
 
 ```bash
-npm install -g @summer-health/linear-cli
+npm install -g @johndockery/linear-cli
 ```
 
-## Configuration
 
-You can provide your Linear API key in several ways (in order of priority):
-
-1. Command-line argument:
-
-```bash
-linear --api-key your_api_key_here list-teams
-```
-
-2. Environment variable:
-
-```bash
-export LINEAR_API_KEY=your_api_key_here
-linear list-teams
-```
-
-3. Configuration file (recommended):
+## Usage
+### Initialize Configuration
 
 ```bash
 linear init --api-key your_api_key_here
 ```
 
 This will save your API key in `~/.linear-cli` for future use.
-
-You can get your API key from Linear by going to Settings > API > Create Key.
-
-## Usage
-
-### Initialize Configuration
-
-```bash
-linear init --api-key your_api_key_here
-```
 
 ### List Teams
 
@@ -116,4 +91,4 @@ linear get-issue -i issue_789
 
 ## License
 
-ISC
+MIT
