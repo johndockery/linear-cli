@@ -50,17 +50,19 @@ function getApiKey(): string {
 
 const program = new Command();
 
-// Add global option for API key
 program
   .name("linear-cli")
   .description("CLI tool for interacting with Linear")
-  .version("1.0.0")
-  .option("--api-key <key>", "Linear API key");
+  .version("1.0.0");
 
 let linearClient: LinearClient;
 
 // Middleware to ensure API key is set before any command
-program.hook("preAction", () => {
+program.hook("preAction", (thisCommand) => {
+  // Skip API key validation for init command
+  if (thisCommand.name() === 'init') {
+    return;
+  }
   const apiKey = getApiKey();
   linearClient = new LinearClient({ apiKey });
 });
