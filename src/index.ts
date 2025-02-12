@@ -294,6 +294,7 @@ program
       console.log(`Assignee: ${assigneeName}`);
       console.log(`Priority: ${issue.priority || "None"}`);
       console.log(`URL: ${issue.url}`);
+      console.log(`Description: ${issue.description}`);
     } catch (error) {
       console.error("Error getting issue:", error);
       process.exit(1);
